@@ -1,0 +1,357 @@
+{
+  "fecha_utc": "2026-11-18T00:52:15.764893+00:00",
+  "fuente": "Mall Customers.xlsx",
+  "sha256": "ad3af9555a4499bac64031eb8980d4f389c4a94dcddbc6976f5915d6879c36a3",
+  "python": "3.14.4",
+  "versiones": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "joblib": "1.5.3",
+    "openpyxl": "3.1.5",
+    "threadpoolctl": "3.6.0"
+  },
+  "filas": 200,
+  "columnas_originales": [
+    "CustomerID",
+    "Gender",
+    "Age",
+    "Education ",
+    "Marital Status",
+    "Annual Income (k$)",
+    "Spending Score (1-100)"
+  ],
+  "k": 5,
+  "comparacion": [
+    {
+      "k": 2,
+      "silueta_media": 0.40232079393173575,
+      "silueta_std": 0.0,
+      "inercia_media": 210.57736597981406,
+      "ari_inicializaciones": 1.0
+    },
+    {
+      "k": 3,
+      "silueta_media": 0.45269043749223226,
+      "silueta_std": 0.0,
+      "inercia_media": 130.4745406866833,
+      "ari_inicializaciones": 1.0
+    },
+    {
+      "k": 4,
+      "silueta_media": 0.4932383700215814,
+      "silueta_std": 0.0,
+      "inercia_media": 88.02641368260878,
+      "ari_inicializaciones": 1.0
+    },
+    {
+      "k": 5,
+      "silueta_media": 0.5518224979035311,
+      "silueta_std": 0.0,
+      "inercia_media": 52.50439252459795,
+      "ari_inicializaciones": 1.0
+    },
+    {
+      "k": 6,
+      "silueta_media": 0.5344517686290315,
+      "silueta_std": 0.0,
+      "inercia_media": 43.394416648462716,
+      "ari_inicializaciones": 1.0
+    },
+    {
+      "k": 7,
+      "silueta_media": 0.5296500201739457,
+      "silueta_std": 0.0,
+      "inercia_media": 35.32269519989303,
+      "ari_inicializaciones": 1.0
+    },
+    {
+      "k": 8,
+      "silueta_media": 0.46934661072867473,
+      "silueta_std": 0.0,
+      "inercia_media": 28.87043464781242,
+      "ari_inicializaciones": 1.0
+    },
+    {
+      "k": 9,
+      "silueta_media": 0.46648820593796314,
+      "silueta_std": 0.006371308205546744,
+      "inercia_media": 25.09822800250823,
+      "ari_inicializaciones": 0.9035938344270612
+    },
+    {
+      "k": 10,
+      "silueta_media": 0.46708344549397224,
+      "silueta_std": 0.0093630619732792,
+      "inercia_media": 22.45837739170621,
+      "ari_inicializaciones": 0.8350623513354364
+    }
+  ],
+  "perfiles": [
+    {
+      "grupo": 1,
+      "clientes": 22,
+      "train": 19,
+      "test": 3,
+      "ingreso": 25.68421052631578,
+      "puntaje": 80.52631578947368
+    },
+    {
+      "grupo": 2,
+      "clientes": 23,
+      "train": 20,
+      "test": 3,
+      "ingreso": 26.549999999999997,
+      "puntaje": 20.649999999999995
+    },
+    {
+      "grupo": 3,
+      "clientes": 81,
+      "train": 63,
+      "test": 18,
+      "ingreso": 55.82539682539683,
+      "puntaje": 49.3968253968254
+    },
+    {
+      "grupo": 4,
+      "clientes": 39,
+      "train": 34,
+      "test": 5,
+      "ingreso": 87.8235294117647,
+      "puntaje": 82.97058823529412
+    },
+    {
+      "grupo": 5,
+      "clientes": 35,
+      "train": 24,
+      "test": 11,
+      "ingreso": 90.62499999999999,
+      "puntaje": 17.0
+    }
+  ],
+  "alternativas": [
+    {
+      "modelo": "KMeans",
+      "grupos": 5,
+      "ruido": 0,
+      "silueta": 0.5518224979035311
+    },
+    {
+      "modelo": "Ward_k5",
+      "grupos": 5,
+      "ruido": 0,
+      "silueta": 0.5533633644125764
+    },
+    {
+      "modelo": "GMM_k5",
+      "grupos": 5,
+      "ruido": 0,
+      "silueta": 0.5441477621144406
+    },
+    {
+      "modelo": "DBSCAN_eps05_min5",
+      "grupos": 2,
+      "ruido": 11,
+      "silueta": 0.40546796721036005
+    }
+  ],
+  "silueta_train": 0.5518224979035311,
+  "silueta_test": 0.5668208621148623,
+  "sensibilidad_muestreo": {
+    "ari_media": 0.988582298341018,
+    "ari_min": 0.9646721063725756,
+    "ari_max": 1.0,
+    "repeticiones": 20
+  },
+  "metricas": {
+    "aciertos": 34,
+    "n_test": 40,
+    "coincidencia": 0.85,
+    "referencia_mayoria": 0.45,
+    "f1_macro": 0.8159398496240602,
+    "precision_macro": 0.836111111111111,
+    "recall_macro": 0.8494949494949495,
+    "matriz": [
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        7
+      ]
+    ]
+  },
+  "importancias": {
+    "Age": 0.3033853628789974,
+    "Annual Income (k$)": 0.6966146371210027
+  },
+  "genero": [
+    {
+      "genero": "F",
+      "n": 112,
+      "media": 51.526785714285715,
+      "mediana": 50.0
+    },
+    {
+      "genero": "M",
+      "n": 88,
+      "media": 48.51136363636363,
+      "mediana": 50.0
+    }
+  ],
+  "ic95_diferencia": [
+    -4.2606128246753245,
+    10.441801948051944
+  ],
+  "cinco_predicciones": [
+    {
+      "Grupo": 1,
+      "Metodo": "estimado",
+      "Revision": true,
+      "Motivo": "Revisión humana obligatoria. Fracción de hoja no calibrada",
+      "Confianza_hoja": 0.5
+    },
+    {
+      "Grupo": 4,
+      "Metodo": "estimado",
+      "Revision": true,
+      "Motivo": "Revisión humana obligatoria. Fracción de hoja no calibrada",
+      "Confianza_hoja": 0.6842105263157895
+    },
+    {
+      "Grupo": 3,
+      "Metodo": "estimado",
+      "Revision": true,
+      "Motivo": "Revisión humana obligatoria. Fracción de hoja no calibrada",
+      "Confianza_hoja": 1.0
+    },
+    {
+      "Grupo": 1,
+      "Metodo": "estimado",
+      "Revision": true,
+      "Motivo": "Revisión humana obligatoria. Fracción de hoja no calibrada",
+      "Confianza_hoja": 0.8823529411764706
+    },
+    {
+      "Grupo": 4,
+      "Metodo": "estimado",
+      "Revision": true,
+      "Motivo": "Revisión humana obligatoria. Fracción de hoja no calibrada",
+      "Confianza_hoja": 0.9090909090909091
+    }
+  ],
+  "pruebas": [
+    {
+      "prueba": "directo",
+      "esperado": "directo",
+      "obtenido": "directo",
+      "ok": true
+    },
+    {
+      "prueba": "estimado",
+      "esperado": "estimado",
+      "obtenido": "estimado",
+      "ok": true
+    },
+    {
+      "prueba": "invalido",
+      "esperado": "rechazado",
+      "obtenido": "rechazado",
+      "ok": true
+    },
+    {
+      "prueba": "incompleto",
+      "esperado": "rechazado",
+      "obtenido": "rechazado",
+      "ok": true
+    },
+    {
+      "prueba": "fuera",
+      "esperado": "fuera_de_dominio",
+      "obtenido": "fuera_de_dominio",
+      "ok": true
+    },
+    {
+      "prueba": "puntaje",
+      "esperado": "rechazado",
+      "obtenido": "rechazado",
+      "ok": true
+    },
+    {
+      "prueba": "texto",
+      "esperado": "rechazado",
+      "obtenido": "rechazado",
+      "ok": true
+    },
+    {
+      "prueba": "puntaje_texto",
+      "esperado": "rechazado",
+      "obtenido": "rechazado",
+      "ok": true
+    },
+    {
+      "prueba": "200_asignaciones",
+      "ok": true
+    },
+    {
+      "prueba": "particiones_sin_interseccion",
+      "ok": true
+    },
+    {
+      "prueba": "sin_genero_en_arbol",
+      "ok": true
+    }
+  ],
+  "rangos": {
+    "Annual Income (k$)": [
+      15.0,
+      137.0
+    ],
+    "Spending Score (1-100)": [
+      1.0,
+      99.0
+    ],
+    "Age": [
+      18.0,
+      70.0
+    ]
+  },
+  "nulos": {
+    "CustomerID": 0,
+    "Gender": 0,
+    "Age": 0,
+    "Education": 0,
+    "Marital Status": 0,
+    "Annual Income (k$)": 0,
+    "Spending Score (1-100)": 0
+  }
+}

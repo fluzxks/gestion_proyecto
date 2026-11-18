@@ -1,0 +1,31 @@
+{
+  "fecha_utc": "2026-11-18T02:56:56.927Z",
+  "navegador": "Microsoft Edge 157.0.4341.60",
+  "perfil": "Aislado, sin conexión. El movimiento de prueba se descarta al cerrar el navegador.",
+  "comprobaciones": [
+    {
+      "id": "Mapa de segmentos: seleccionar G5 y comprobar lectura",
+      "ok": true
+    },
+    {
+      "id": "Contraste de puntaje: intervalo incluye cero",
+      "ok": true
+    },
+    {
+      "id": "Riesgos: filtro alta y vínculos de seguimiento relativos",
+      "ok": true
+    },
+    {
+      "id": "Tablero: mover una tarjeta de prueba y comprobar persistencia más exportación",
+      "ok": true
+    },
+    {
+      "id": "Tablero: volver al Gantt y a las 11 pruebas",
+      "ok": true
+    },
+    {
+      "id": "Sin errores JavaScript ni solicitudes externas",
+      "ok": true
+    }
+  ]
+}

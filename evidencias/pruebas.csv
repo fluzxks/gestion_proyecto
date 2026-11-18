@@ -1,0 +1,12 @@
+﻿prueba,esperado,obtenido,ok
+directo,directo,directo,True
+estimado,estimado,estimado,True
+invalido,rechazado,rechazado,True
+incompleto,rechazado,rechazado,True
+fuera,fuera_de_dominio,fuera_de_dominio,True
+puntaje,rechazado,rechazado,True
+texto,rechazado,rechazado,True
+puntaje_texto,rechazado,rechazado,True
+200_asignaciones,,,True
+particiones_sin_interseccion,,,True
+sin_genero_en_arbol,,,True

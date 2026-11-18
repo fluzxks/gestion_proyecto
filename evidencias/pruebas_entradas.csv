@@ -1,0 +1,9 @@
+﻿CustomerID,Grupo,Metodo,Revision,Motivo,Confianza_hoja
+directo,3.0,directo,False,Asignación descriptiva,
+estimado,3.0,estimado,True,Revisión humana obligatoria. Fracción de hoja no calibrada,1.0
+invalido,,rechazado,True,Ingreso ausente o inválido,
+incompleto,,rechazado,True,Falta puntaje y edad válida dentro del soporte de entrenamiento,
+fuera,,fuera_de_dominio,True,Ingreso fuera del rango de entrenamiento,
+puntaje,,rechazado,True,Puntaje fuera de 1 a 100,
+texto,,rechazado,True,Ingreso ausente o inválido,
+puntaje_texto,,rechazado,True,Puntaje fuera de 1 a 100,

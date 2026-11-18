@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dashboard del Caso 3 de Gestión de Proyectos de Datos. Segmentación, decisiones comerciales y control de ejecución.">
+  <meta name="theme-color" content="#10151f">
+  <title>Caso 03 · Segmentación comercial</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="modelo.css">
+  <link rel="stylesheet" href="gestion.css">
+  <link rel="stylesheet" href="pulso.css">
+  <link rel="stylesheet" href="motion.css">
+  <link rel="stylesheet" href="campana.css">
+  <link rel="stylesheet" href="mesa.css">
+  <link rel="stylesheet" href="genero.css">
+  <script defer src="datos.js"></script>
+  <script defer src="escena3d.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="modelo.js"></script>
+  <script defer src="gestion.js"></script>
+  <script defer src="campana.js"></script>
+  <script defer src="genero.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header class="topbar">
+    <a class="brand" href="#resumen" aria-label="Caso 03, resumen"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Segmentación<span class="brand-suffix"> / Caso 03</span></span></a>
+    <div class="top-actions"><span class="local">Demo pública</span><button class="button button-outline" id="demo" type="button">Modo presentación <span aria-hidden="true">↗</span></button></div>
+  </header>
+  <div class="shell">
+    <aside class="sidebar">
+      <nav aria-label="Vistas del dashboard" id="views">
+        <div class="nav-cluster" role="group" aria-label="Decisión comercial">
+          <p class="nav-label" aria-hidden="true">DECISIÓN COMERCIAL</p>
+          <a href="#resumen" data-route="resumen">Resumen ejecutivo</a>
+          <a href="#segmentos" data-route="segmentos">Comparar segmentos</a>
+          <a href="#evidencia-gasto" data-route="evidencia-gasto">Evidencia de gasto</a>
+          <a href="#campana" data-route="campana">Ficha de campaña</a>
+        </div>
+        <div class="nav-cluster" role="group" aria-label="Respaldo del piloto">
+          <p class="nav-label" aria-hidden="true">RESPALDO DEL PILOTO</p>
+          <a href="#modelo" data-route="modelo">Decisiones del modelo</a>
+          <a href="#pruebas" data-route="pruebas">Laboratorio de pruebas</a>
+          <a href="#plan" data-route="plan">Plan y capacidad</a>
+          <a href="#inversion" data-route="inversion">Costo y precio</a>
+          <a href="#control" data-route="control">Riesgos y control</a>
+          <a href="#evidencias" data-route="evidencias">Evidencias del proyecto</a>
+        </div>
+      </nav>
+      <div class="aside-note"><b>Gestión de Proyectos de Datos</b><span>SCY1102 · DUOC UC</span></div>
+    </aside>
+    <main id="contenido" tabindex="-1">
+      <div id="demo-bar" hidden></div>
+      <div id="view" aria-live="off"><p class="lead">Cargando el Caso 03…</p></div>
+      <footer><span>Caso 03 · DUOC UC · Piloto académico de segmentación</span><a href="#evidencias">Ver fuentes y evidencia ↗</a></footer>
+    </main>
+  </div>
+</body>
+</html>

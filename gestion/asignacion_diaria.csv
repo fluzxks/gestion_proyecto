@@ -1,0 +1,83 @@
+﻿dia,semana,edt,tarea,rol,horas
+1,1,1.1,Acta y requisitos,PM,8
+2,1,1.1,Acta y requisitos,DE,4
+2,1,1.1,Acta y requisitos,DS,4
+2,1,1.1,Acta y requisitos,PM,4
+3,1,1.1,Acta y requisitos,PM,8
+3,1,1.2,Seguimiento y cambios,DS,2
+4,1,2.1,Ingesta y diccionario,DE,8
+5,1,1.2,Seguimiento y cambios,PM,6
+5,1,2.1,Ingesta y diccionario,BI,8
+5,1,2.1,Ingesta y diccionario,DE,8
+5,1,2.1,Ingesta y diccionario,DS,2
+5,1,2.1,Ingesta y diccionario,QA,4
+6,2,2.1,Ingesta y diccionario,DE,8
+7,2,2.2,Calidad y contrato,BI,2
+7,2,2.2,Calidad y contrato,DE,8
+7,2,2.2,Calidad y contrato,DS,4
+8,2,2.2,Calidad y contrato,DE,8
+8,2,2.2,Calidad y contrato,DS,8
+9,2,1.2,Seguimiento y cambios,PM,8
+9,2,3.1,Segmentación comparada,DE,8
+9,2,3.1,Segmentación comparada,DS,8
+10,2,3.1,Segmentación comparada,BI,8
+10,2,3.1,Segmentación comparada,DS,8
+10,2,3.1,Segmentación comparada,QA,8
+11,3,3.1,Segmentación comparada,DE,8
+11,3,3.1,Segmentación comparada,DS,8
+11,3,3.1,Segmentación comparada,QA,8
+12,3,3.2,Estimador y reglas,DE,8
+12,3,3.2,Estimador y reglas,DS,8
+12,3,3.2,Estimador y reglas,QA,8
+13,3,3.2,Estimador y reglas,DS,8
+14,3,1.2,Seguimiento y cambios,PM,8
+14,3,3.2,Estimador y reglas,BI,6
+14,3,3.2,Estimador y reglas,DS,8
+15,3,4.1,Pipeline y validaciones,DS,8
+15,3,4.1,Pipeline y validaciones,QA,6
+15,3,4.2,Tablero y decisiones,BI,6
+16,4,4.1,Pipeline y validaciones,DS,2
+16,4,4.1,Pipeline y validaciones,QA,7
+16,4,4.2,Tablero y decisiones,BI,8
+16,4,4.2,Tablero y decisiones,DE,8
+16,4,4.2,Tablero y decisiones,DS,6
+17,4,4.1,Pipeline y validaciones,DE,3
+17,4,4.1,Pipeline y validaciones,QA,8
+17,4,4.2,Tablero y decisiones,BI,8
+17,4,4.2,Tablero y decisiones,DS,8
+18,4,4.1,Pipeline y validaciones,DE,8
+18,4,4.1,Pipeline y validaciones,DS,8
+18,4,4.1,Pipeline y validaciones,QA,6
+18,4,4.2,Tablero y decisiones,BI,8
+18,4,4.2,Tablero y decisiones,PM,4
+19,4,1.2,Seguimiento y cambios,PM,8
+19,4,5.1,QA y aceptación de usuario,BI,4
+19,4,5.1,QA y aceptación de usuario,DS,4
+19,4,5.1,QA y aceptación de usuario,QA,4
+20,4,5.1,QA y aceptación de usuario,BI,8
+20,4,5.1,QA y aceptación de usuario,DE,1
+20,4,5.1,QA y aceptación de usuario,QA,4
+21,5,5.1,QA y aceptación de usuario,DE,7
+21,5,5.1,QA y aceptación de usuario,DS,8
+21,5,5.1,QA y aceptación de usuario,QA,8
+22,5,5.2,Piloto operativo en sombra,BI,4
+22,5,5.2,Piloto operativo en sombra,DE,1
+23,5,5.2,Piloto operativo en sombra,BI,7
+23,5,5.2,Piloto operativo en sombra,DE,1
+24,5,1.2,Seguimiento y cambios,PM,8
+24,5,5.2,Piloto operativo en sombra,BI,7
+24,5,5.2,Piloto operativo en sombra,DE,1
+25,5,5.2,Piloto operativo en sombra,BI,4
+25,5,5.2,Piloto operativo en sombra,DE,1
+26,6,1.2,Seguimiento y cambios,DS,4
+26,6,5.2,Piloto operativo en sombra,BI,7
+26,6,5.2,Piloto operativo en sombra,QA,1
+27,6,6.1,Transferencia y cierre,PM,8
+28,6,6.1,Transferencia y cierre,BI,5
+28,6,6.1,Transferencia y cierre,DS,4
+28,6,6.1,Transferencia y cierre,PM,2
+29,6,1.2,Seguimiento y cambios,PM,4
+29,6,6.1,Transferencia y cierre,PM,2
+29,6,6.1,Transferencia y cierre,QA,8
+30,6,6.1,Transferencia y cierre,DE,1
+30,6,6.1,Transferencia y cierre,PM,2

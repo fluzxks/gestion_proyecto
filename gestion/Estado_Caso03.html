@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es-CL">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estado del proyecto · Caso 03</title>
+<style>
+*{box-sizing:border-box}
+:root{color-scheme:dark;--page:#0e1927;--card:#162638;--ink:#f1f6fd;--muted:#bbccde;--line:#304358;--mint:#8cebc9;--amber:#ffcf86}
+body{margin:0;background:var(--page);color:var(--ink);font:16px/1.45 system-ui,sans-serif}
+main{max-width:1060px;margin:auto;padding:32px 24px 56px}
+section{margin:0 0 22px}
+h1,h2,p{margin:0}
+h1{font-size:36px;line-height:1.1;letter-spacing:-.035em}
+h2{font-size:21px;margin:0 0 10px}
+a{color:var(--mint);text-underline-offset:3px}
+header p,.description{color:var(--muted);margin-top:8px}
+nav{display:flex;flex-wrap:wrap;gap:10px 22px;margin:18px 0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.card,.notice{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.card strong{display:block;font-size:30px;color:var(--mint);line-height:1.25}
+.card:last-child strong,.pendiente{color:var(--amber)}
+.card span,time{color:var(--muted);font-size:.9rem}
+.table{border:1px solid var(--line);border-radius:10px;overflow:auto}
+table{width:100%;border-collapse:collapse;text-align:left}
+th,td{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--card);color:var(--muted);font-size:.85rem}
+tbody tr:last-child td{border-bottom:0}
+.check{color:var(--mint);white-space:nowrap;font-size:.85rem;font-weight:700}
+.review{color:var(--amber)}
+.count{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.details{min-width:780px}
+.compact{min-width:570px}
+.actions{display:grid;gap:10px}
+.actions p{margin:5px 0}
+.secondary{color:var(--muted);font-size:.92rem}
+@media(max-width:600px){main{padding:20px 14px}h1{font-size:30px}.card strong{font-size:23px}.card{padding:10px}.cards{gap:7px}}
+@media(prefers-color-scheme:light){:root{color-scheme:light;--page:#f3f7fc;--card:#e8f0f9;--ink:#132436;--muted:#425c73;--line:#b8c9da;--mint:#00644e;--amber:#7d4715}}
+</style>
+<main>
+  <section id="captura" aria-labelledby="titulo">
+    <header><h1 id="titulo">Estado del proyecto</h1><p>Caso 03 · Segmentación de clientes · <time datetime="2026-11-18T02:56:57.122+00:00">17/11/2026 23:56 (hora de Santiago)</time></p></header>
+    <div class="cards">
+      <div class="card"><span>Trabajo académico</span><strong>4 entregables respaldados</strong><span>Resultados, automatización, informe y presentación</span></div>
+      <div class="card"><span>Piloto comercial</span><strong>H0 pendiente</strong><span>30 días hábiles propuestos desde la aprobación</span></div>
+    </div>
+    <div class="table">
+      <table class="compact" aria-label="Entregables del trabajo académico">
+        <thead><tr><th>Entregable</th><th>Fecha del archivo</th><th>Estado del respaldo</th></tr></thead>
+        <tbody><tr><td>Segmentación y validación</td><td>03/11/2026</td><td>K=5 y métricas reproducidas</td></tr>
+<tr><td>Automatización de asignaciones</td><td>03/11/2026</td><td>Prueba original y lote mixto corregido</td></tr>
+<tr><td>Informe del proyecto</td><td>11/11/2026</td><td>Informe de cliente actualizado</td></tr>
+<tr><td>Presentación del proyecto</td><td>12/11/2026</td><td>Presentación para cliente actualizada</td></tr></tbody>
+      </table>
+    </div>
+    <p class="description">Fechas de archivo registradas en el ZIP original. Las fechas previstas y las horas de trabajo no están registradas.</p>
+  </section>
+  <nav aria-label="Archivos de seguimiento">
+
+    <a href="Tablero_local.html">Tablero de gestión</a>
+    <a href="bitacora_verificacion.csv">Bitácora CSV</a>
+    <a href="plan_verificacion.json">Plan registrado</a>
+
+    <a href="../index.html">Dashboard</a>
+
+
+  </nav>
+  <section aria-labelledby="comparacion">
+    <h2 id="comparacion">Verificaciones técnicas al cierre · 5/5 conformes</h2>
+    <p class="description">Controles registrados el <time datetime="2026-11-18T02:54:30.102+00:00">17/11/2026 23:54 (hora de Santiago)</time>. Las ventanas y las duraciones corresponden a la ejecución automatizada de las pruebas.</p>
+    <div class="table" style="margin-top:10px">
+      <table class="details">
+        <thead><tr><th>ID</th><th>Criterio planificado</th><th>Resultado ejecutado</th><th class="count">Plan (s)</th><th class="count">Real (s)</th><th>Evidencia</th></tr></thead>
+        <tbody><tr><td>V01</td><td>Hash de origen igual al registrado, 200 filas únicas y sin celdas vacías.</td><td>Huella coincide · 200 IDs únicos · 0 celdas vacías · <span class="check">Conforme</span></td><td class="count">15</td><td class="count">0,372</td><td>Control documentado</td></tr>
+<tr><td>V02</td><td>Repetir K=5, siluetas, tamaños de segmentos, acuerdo 34/40 e IC de género de referencia.</td><td>K=5 · Siluetas 0,552 ajuste y 0,567 prueba · Acuerdo 34/40 · <span class="check">Conforme</span></td><td class="count">90</td><td class="count">3,993</td><td><a href="../evidencias/resultados.json">Abrir V02</a></td></tr>
+<tr><td>V03</td><td>11 de 11 pruebas aprobadas y tres rutas conservadas en un lote mixto.</td><td>11/11 pruebas · lote mixto conforme · <span class="check">Conforme</span></td><td class="count">15</td><td class="count">0,013</td><td><a href="../evidencias/pruebas_cierre.csv">Abrir V03</a></td></tr>
+<tr><td>V04</td><td>Conciliar 480 h, pico de 8 h/día, integración de 112 h, UAT en D19 y tope de $13.800.000.</td><td>480 h · máximo 8 h/día · 112 h · UAT D19 · tope $13,8 M · <span class="check">Conforme</span></td><td class="count">15</td><td class="count">0,006</td><td><a href="../gestion/asignacion_diaria.csv">Abrir V04</a></td></tr>
+<tr><td>V05</td><td>Abrir el dashboard y tablero sin internet, operar las vistas y probar los enlaces.</td><td>6/6 controles en Edge local · <span class="check">Conforme</span></td><td class="count">40</td><td class="count">1,335</td><td><a href="../evidencias/sesion_dashboard.json">Abrir V05</a></td></tr></tbody>
+      </table>
+    </div>
+  </section>
+  <section aria-labelledby="correcciones">
+    <h2 id="correcciones">Correcciones comprobadas</h2>
+    <div class="actions"><article class="card"><b>A04 · Lote mixto</b><p>Una fila sin puntaje podía cambiar la ruta de todo el lote. La ruta se decide por fila. Se ejecutaron las pruebas del lote.</p><a href="../evidencias/pruebas_cierre.csv">Ver respaldo</a></article>
+<article class="card"><b>A06 · Capacidad de integración</b><p>La propuesta anterior ofrecía como máximo 106 h frente a 112 h de integración. Nivelación diaria de las 112 h. UAT queda programada para el día 19.</p><a href="../gestion/asignacion_diaria.csv">Ver respaldo</a></article></div>
+  </section>
+  <section class="notice" aria-labelledby="pendiente">
+    <h2 id="pendiente">Siguiente decisión · H0</h2>
+    <p>Identificar patrocinador y acordar fuente, disponibilidad del equipo, presupuesto y fecha de inicio. El control de horas y costos comerciales empieza con la línea base aprobada.</p>
+    <p class="secondary description">El historial original del equipo no está disponible. La bitácora refleja solo esta revisión. Las horas y montos del cronograma comercial son estimaciones.</p>
+  </section>
+</main>
+</html>

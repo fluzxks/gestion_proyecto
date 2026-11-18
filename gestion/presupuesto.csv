@@ -1,0 +1,13 @@
+﻿concepto,base,monto,tipo
+Jefe de proyecto y enlace con cliente,80 h x 25000 CLP/h,2000000,"Estimación, tarifa supuesta"
+Ingeniero de datos,100 h x 22000 CLP/h,2200000,"Estimación, tarifa supuesta"
+Científico de datos,120 h x 26000 CLP/h,3120000,"Estimación, tarifa supuesta"
+Analista de negocio y visualización,100 h x 20000 CLP/h,2000000,"Estimación, tarifa supuesta"
+QA e integración,80 h x 21000 CLP/h,1680000,"Estimación, tarifa supuesta"
+Infraestructura y respaldo,Provisión única máxima,200000,"Supuesto, no cotización"
+Talleres y operación del piloto,Provisión única máxima,300000,"Supuesto, no incluye incentivos"
+Costo directo,Mano de obra + provisiones,11500000,Subtotal
+Contingencia,15% del directo,1725000,Dentro de la línea base
+Línea base de costo,Directo + contingencia,13225000,Base para control
+Reserva de gestión,5% del directo,575000,"Fuera de línea base, libera sponsor"
+Costo máximo interno del piloto,Línea base + reserva de gestión,13800000,"Neto, impuestos por definir"

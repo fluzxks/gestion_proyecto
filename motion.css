@@ -1,0 +1,207 @@
+.plot-stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-width: 0;
+  margin: .6rem 0 .5rem;
+  border: 1px solid #35465d;
+  border-radius: 12px;
+  background: radial-gradient(ellipse at 50% 100%, #223444, transparent 75%), #151e2b;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.plot-stage[data-mode="3d"] {
+  border-color: #605379;
+  background:
+    radial-gradient(ellipse 78% 80% at 90% 70%, #43214a5e, transparent 80%),
+    radial-gradient(ellipse 75% 78% at 18% 20%, #1f4d6366, transparent 83%),
+    #141c2a;
+  box-shadow: inset 0 0 2.8rem #11172799;
+}
+
+.plot-stage .stage-orbit {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  perspective: 520px;
+  opacity: 0;
+  transition: opacity .22s ease-out;
+}
+
+.plot-stage .stage-orbit::before,
+.plot-stage .stage-orbit::after {
+  position: absolute;
+  inset: 12% 10%;
+  border: 1px solid #39e0ff35;
+  border-radius: 50%;
+  box-shadow: 0 0 22px #39e0ff13, inset 0 0 12px #39e0ff0b;
+  content: "";
+  transform: translateY(24%) rotateX(58deg) rotateZ(-16deg);
+}
+
+.plot-stage .stage-orbit::after {
+  inset: 5% 16%;
+  border-color: #ef67e52b;
+  box-shadow: 0 0 20px #ef67e514;
+  transform: translateY(18%) rotateX(51deg) rotateZ(23deg);
+}
+
+.plot-stage[data-mode="3d"] .stage-orbit { opacity: .72; }
+.plot-stage.is-orbiting[data-mode="3d"] .stage-orbit { opacity: 1; }
+
+.plot .plot-stage canvas,
+canvas.constellation {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: clamp(213px, 19.8vw, 282px);
+  outline-offset: -4px;
+}
+
+.plot-stage[data-mode="3d"] canvas {
+  cursor: grab;
+  touch-action: none;
+}
+
+.plot-stage.is-orbiting,
+.plot-stage.is-orbiting canvas {
+  cursor: grabbing !important;
+}
+
+.plot-stage.is-orbiting {
+  border-color: #82d8ec;
+  box-shadow: 0 0 14px #39e0ff23;
+  user-select: none;
+}
+
+.stage-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .36rem;
+  align-items: center;
+  min-width: 0;
+  margin: .55rem 0 .1rem;
+}
+
+.stage-toolbar > [role="group"] {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  align-items: center;
+  max-width: 100%;
+}
+
+.stage-toolbar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.55rem;
+  min-height: 2rem;
+  border: 1px solid #45546d;
+  border-radius: 7px;
+  padding: .27rem .62rem;
+  background: #222e40;
+  color: #d4e4fa;
+  font-size: .76rem;
+  font-weight: 730;
+  line-height: 1.22;
+  transition: background-color .16s ease-out, border-color .16s ease-out, color .16s ease-out;
+}
+
+.stage-toolbar button:hover {
+  border-color: #9d85ff;
+  background: #2d3650;
+  color: #fff;
+}
+
+.stage-toolbar button[aria-pressed="true"] {
+  border-color: #75e7ff;
+  background: #a0edff;
+  color: #102337;
+}
+
+.stage-toolbar button:focus-visible,
+.plot-stage canvas:focus-visible {
+  outline: 2px solid #79e7ff;
+}
+
+.stage-toolbar > :is(span, p, small, output) {
+  min-width: 0;
+  color: #b5c6dd;
+  font-size: .72rem;
+  line-height: 1.3;
+}
+
+.plot .stage-instructions {
+  margin: .26rem 0 .46rem;
+  color: #a7b9d3;
+  font-size: .73rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.decision-panel .hero-gap strong {
+  animation: motion-value-enter .32s ease-out both;
+}
+
+.decision-panel .offer-pair > div {
+  animation: motion-panel-enter .28s ease-out both;
+}
+
+.decision-panel .offer-pair > div:nth-child(2) { animation-delay: .045s; }
+
+.donut {
+  animation: motion-ring-enter .34s ease-out both;
+}
+
+.distribution-list button i::before,
+.compare-pair .meter span {
+  transform-origin: left center;
+  animation: motion-bar-enter .31s cubic-bezier(.16,.65,.35,1) both;
+}
+
+.compare-pair .cohort[data-variant="b"] .meter span { animation-delay: .045s; }
+
+@keyframes motion-value-enter {
+  from { transform: translateY(5px) scale(.97); opacity: .68; }
+  to { transform: none; opacity: 1; }
+}
+
+@keyframes motion-panel-enter {
+  from { transform: translateY(5px); opacity: .72; }
+  to { transform: none; opacity: 1; }
+}
+
+@keyframes motion-ring-enter {
+  from { transform: scale(.94); opacity: .65; }
+  to { transform: none; opacity: 1; }
+}
+
+@keyframes motion-bar-enter {
+  from { transform: scaleX(.18); opacity: .75; }
+  to { transform: none; opacity: 1; }
+}
+
+@media (max-width: 675px) {
+  .plot .plot-stage canvas,
+  canvas.constellation { height: clamp(198px, 59vw, 245px); }
+  .stage-toolbar button { min-height: 2.15rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plot-stage,
+  .plot-stage .stage-orbit,
+  .stage-toolbar button,
+  .decision-panel .hero-gap strong,
+  .decision-panel .offer-pair > div,
+  .donut,
+  .distribution-list button i::before,
+  .compare-pair .meter span {
+    animation: none;
+    transition: none;
+  }
+}

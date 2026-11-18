@@ -1,0 +1,8 @@
+﻿id,riesgo,dueno,probabilidad_1a5,impacto_1a5,exposicion,respuesta,condicion
+R1,"Datos sin contexto, consentimiento ni representatividad confirmados",DE,4,5,20,"Bloquear campañas y pedir origen, permisos y diccionario en H1",Cliente entrega antecedentes y responsable de datos
+R2,200 registros no permiten prometer ROI o generalización,DS,4,4,16,"Piloto en sombra, validación externa futura y A/B con cálculo muestral",No hay medición de ingreso incremental en este alcance
+R3,Árbol confunde G4 y G5 cuando falta puntaje,DS,4,4,16,Revisión humana de toda asignación estimada. Preferir capturar puntaje,"Umbral de aceptación a acordar, 85% no equivale a ventas"
+R4,Retraso de accesos o revisión del cliente,PM,3,4,12,Sponsor responde en 2 días hábiles. Escalar al tercer día,Retraso mueve T0 o requiere cambio aprobado
+R5,Exposición de perfiles o carga de modelos no confiables,QA,2,5,10,"Acceso mínimo, carpeta restringida, respaldo y solo modelos propios",Cero exportaciones públicas de registros individuales
+R6,Sobrecarga de DS en S3 y de BI en S4,PM,3,3,9,"Reservar 40 h DS S3 y 36 h BI S4, revisar disponibilidad antes de T0","Si no hay capacidad, reprogramar, no recortar QA"
+R7,Nuevos datos cambian distribución de clientes,DE,3,4,12,Revisar rangos y mezcla de grupos semanalmente. No reentrenar automático,"Escalar cambio de >10 puntos porcentuales por grupo, umbral propuesto"

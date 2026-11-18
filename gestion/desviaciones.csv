@@ -1,0 +1,7 @@
+﻿id,hallazgo,evidencia,impacto,accion,tipo
+D1,"Referencias a 12 diapositivas y otro PPT, pero ZIP contiene seis",Revisión de archivos recibidos,Inconsistencia documental,Unificar entregables y mapa de evidencias,Control documental
+D2,Función anterior usa una sola ruta para todo un lote,Inspección del código,Filas con puntaje podrían usar árbol si otra fila no tiene puntaje,Procesar por fila y probar lote mixto,Corrección técnica
+D3,"Faltan presupuesto, horas y línea base histórica aprobada",ZIP recibido,"No se puede calcular variación temporal, CPI o SPI real",Estimar nueva línea base y registrar reales desde T0,"Propuesta, pendiente de aprobación"
+D4,Cliente y aceptación comercial no identificados,Confirmación del usuario,Bloqueo para iniciar servicio comercial,"Puerta H0 de sponsor, datos y disponibilidad",Pendiente del cliente
+D5,Énfasis del PPT anterior en métricas técnicas,Comentario del usuario y seis diapositivas,Decisión del cliente poco visible,"Narrativa de decisión, costo, plazo y aceptación",Corrección de comunicación
+D6,La distribución semanal anterior dejaba al menos 6 h sin cupo en D15–D18,Revisión de ventanas EDT con tope de 8 h por persona al día,Riesgo de aplazar las pruebas de usuario de D19,"Redistribuir horas por EDT, rol y día. A06 verifica 112 h de integración dentro de la ventana","Línea base propuesta corregida, sin desvío comercial real"

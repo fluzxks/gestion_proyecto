@@ -1,0 +1,41 @@
+{
+  "registrado_utc": "2026-11-18T02:54:30.102+00:00",
+  "alcance": "Verificación del cierre académico. Ventanas en segundos de ejecución técnica.",
+  "verificaciones": [
+    {
+      "id": "V01",
+      "actividad": "Fuente y calidad",
+      "criterio": "Hash de origen igual al registrado, 200 filas únicas y sin celdas vacías.",
+      "evidencia": "datos/Mall Customers.xlsx",
+      "ventana_segundos": 15
+    },
+    {
+      "id": "V02",
+      "actividad": "Modelo y contraste de puntaje",
+      "criterio": "Repetir K=5, siluetas, tamaños de segmentos, acuerdo 34/40 e IC de género de referencia.",
+      "evidencia": "evidencias/reproduccion_cierre.json",
+      "ventana_segundos": 90
+    },
+    {
+      "id": "V03",
+      "actividad": "Procesamiento del lote",
+      "criterio": "11 de 11 pruebas aprobadas y tres rutas conservadas en un lote mixto.",
+      "evidencia": "evidencias/pruebas_cierre.csv",
+      "ventana_segundos": 15
+    },
+    {
+      "id": "V04",
+      "actividad": "Capacidad y costo propuestos",
+      "criterio": "Conciliar 480 h, pico de 8 h/día, integración de 112 h, UAT en D19 y tope de $13.800.000.",
+      "evidencia": "gestion/asignacion_diaria.csv",
+      "ventana_segundos": 15
+    },
+    {
+      "id": "V05",
+      "actividad": "Demostración local",
+      "criterio": "Abrir el dashboard y tablero sin internet, operar las vistas y probar los enlaces.",
+      "evidencia": "evidencias/sesion_dashboard.json",
+      "ventana_segundos": 40
+    }
+  ]
+}

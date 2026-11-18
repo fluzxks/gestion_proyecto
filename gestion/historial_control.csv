@@ -1,0 +1,11 @@
+﻿fecha_utc,tarjeta,desde,hacia,autor,razon
+2026-11-18T02:56:51.400+00:00,V01,Plan de verificación,En curso,Ejecución registrada,"Hash de origen igual al registrado, 200 filas únicas y sin celdas vacías."
+2026-11-18T02:56:51.773+00:00,V01,En curso,Conforme,Ejecución registrada,Huella coincide · 200 IDs únicos · 0 celdas vacías
+2026-11-18T02:56:51.773+00:00,V02,Plan de verificación,En curso,Ejecución registrada,"Repetir K=5, siluetas, tamaños de segmentos, acuerdo 34/40 e IC de género de referencia."
+2026-11-18T02:56:55.766+00:00,V02,En curso,Conforme,Ejecución registrada,"K=5 · Siluetas 0,552 ajuste y 0,567 prueba · Acuerdo 34/40"
+2026-11-18T02:56:55.766+00:00,V03,Plan de verificación,En curso,Ejecución registrada,11 de 11 pruebas aprobadas y tres rutas conservadas en un lote mixto.
+2026-11-18T02:56:55.779+00:00,V03,En curso,Conforme,Ejecución registrada,11/11 pruebas · lote mixto conforme
+2026-11-18T02:56:55.779+00:00,V04,Plan de verificación,En curso,Ejecución registrada,"Conciliar 480 h, pico de 8 h/día, integración de 112 h, UAT en D19 y tope de $13.800.000."
+2026-11-18T02:56:55.785+00:00,V04,En curso,Conforme,Ejecución registrada,"480 h · máximo 8 h/día · 112 h · UAT D19 · tope $13,8 M"
+2026-11-18T02:56:55.785+00:00,V05,Plan de verificación,En curso,Ejecución registrada,"Abrir el dashboard y tablero sin internet, operar las vistas y probar los enlaces."
+2026-11-18T02:56:57.120+00:00,V05,En curso,Conforme,Ejecución registrada,6/6 controles en Edge local
